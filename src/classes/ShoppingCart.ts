@@ -11,7 +11,7 @@ export class ShoppingCart {
   }
 
   removeItem(index: number): void {
-    this._itens.slice(index, 1);
+    this._itens.splice(index, 1);
   }
 
   public get items(): Readonly<CartItem[]> {
